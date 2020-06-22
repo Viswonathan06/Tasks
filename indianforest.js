@@ -85,5 +85,17 @@ function drawman(){
   canvas.stroke();
 }
 
+function legend(){
+  div = document.getElementById('legend');
+  for(var i=0;i<10;i++){
+    var leg= document.createElement('span');
+    leg.id=i;
+    leg.textContent=animalkeyvalue[i];
+    leg.style.color=animalcolor[i];
+    div.appendChild(leg);
+  }
+}
+
 //call functions
 initarray();
+legend();

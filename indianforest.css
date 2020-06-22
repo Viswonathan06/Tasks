@@ -9,14 +9,26 @@ body{
   align-self: center;
   margin: 0px auto;
 }
+
+div{
+  margin: 0px auto;
+  align-self: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  width : 50em;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+}
+span{
+  width: 5em;
+}
 button{
   width: 4em;
 }
 input{
   width : 4em;
 }
-span{
-
+#span{
   width:20em;
   display: grid;
   align-self: center;

@@ -10,12 +10,14 @@
       <h1>The Map with Animals</h1>
     </header>
     <canvas id="canvas" width="600" height="600" onmousemove="manpos(event)"></canvas>
-    <span>
+    <span id="span">
       <input type="Number" id="size">
       <button id="btn1" onclick="update()">Enter</button>
       <label for="checkbox">Only wild?</label>
       <input type="checkbox" id="switch" >
     </span>
+    <div id="legend">
+    </div>
     <script src="indianforest.js"></script>
   </body>
 </html>
