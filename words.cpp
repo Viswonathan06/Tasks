@@ -2,39 +2,20 @@
 #include<string>
 using namespace std;
 string getdig(int twodig){
-  string ones,tens;
-  string ret;
-  int i=0;
-  while(i<2)
-  {
-    switch(twodig%10){
-      case 0: ones=" "; tens=" "; break;
-      case 1: ones="one "; tens="ten "; break;
-      case 2: ones="two "; tens="twenty "; break;
-      case 3: ones="three "; tens="thirty "; break;
-      case 4: ones="four ";tens="forty "; break;
-      case 5: ones="five ";tens="fifty "; break;
-      case 6: ones="six ";tens="sixty "; break;
-      case 7: ones="seven ";tens="seventy "; break;
-      case 8: ones="eight ";tens="eighty "; break;
-      case 9: ones="nine ";tens="ninety "; break;
-      default:;
-    }
-    if(!i){
-      ret=ones;
-    }
-    i++;
-    twodig=twodig/10;
-  }
-  if(tens==" ")
-    return ret;
-  return tens + ret;
+  string ones[10] = {" ","one ","two ","three ","four ","five ","six ","seven ","eight ","nine "};
+  string tens[10] = {" ","ten ","twenty ","thirty ","forty ","fifty ","sixty ","seventy ","eighty ","ninety "};
+  string lolz[10] = {"ten ","eleven ","twelve ","thirteen ","fourteen ","fifteen","sixteen ","seventeen ","eighteen ","nineteen"};
+  if(tens[twodig/10]=="ten ")
+    return lolz[twodig%10];
+  if(tens[twodig/10]==" ")
+    return ones[twodig%10];
+  return tens[twodig/10]+ones[twodig%10];
 }
 
 int main(){
   string buf="0";
   int cur;
-  int number=90890;
+  int number=111111;
   int mainnumber=number;
   string only=" ";
   if(number%10==0)
