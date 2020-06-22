@@ -1,0 +1,25 @@
+body{
+  display: grid;
+  grid-template-columns: 1fr
+  align-items: center;
+  text-align: center;
+}
+#canvas{
+  border: solid black;
+  align-self: center;
+  margin: 0px auto;
+}
+button{
+  width: 4em;
+}
+input{
+  width : 4em;
+}
+span{
+
+  width:20em;
+  display: grid;
+  align-self: center;
+  margin: 1em auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
