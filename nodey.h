@@ -51,7 +51,6 @@ public:
       buff=buff->next;
       cout<<"\nkey: "<<buff->key<<"\nvalue: "<<buff->value;
     }
-    cout<<"\nDone";
   }
   int contains(string s){
     buff=begin;
