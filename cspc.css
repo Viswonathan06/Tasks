@@ -1,0 +1,58 @@
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+header{
+  background-color: #77D6F0;
+}
+
+h1{
+  text-align: center;
+
+}
+#instruct{
+  visibility: hidden;
+}
+label{
+  text-align: center;
+  margin: 0px auto;
+}
+
+span{
+  text-align: center;
+  align-items:center;
+  align-content: center;
+  margin: 0px auto;
+
+}
+#heading button{
+  border: 0px;
+ width:4em;
+  margin: 0px auto;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#list button{
+  width:4em;
+    border: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+div{
+  margin: 0px auto;
+}
+#btn2{
+  width:15em;
+  margin: 0px auto;
+  visibility: hidden;
+}
+
+p{
+  margin: 0px auto;
+  width: 40em;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cspc.css">
+    <title></title>
+  </head>
+  <body>
+      <header>
+        <h1>Cutvertex Finder</h1>
+      </header>
+      <br>
+      <label>Enter the number of nodes in graph:</label>
+      <span>
+
+
+
+
+        <input type="Number" min="1" max ="100"id="n">
+        <button id="btn1" onclick="update()">Enter</button>
+
+      </span>
+      <br>
+      <label id="instruct">Select each node, and click
+      below the node to connect them <br>
+      Ex if Node 1 is connected to 2,
+      click Node 1 and click button below Node 2</label>
+<br>
+      <span id="heading">
+
+      </span> <br>
+      <span id="list">
+
+      </span> <br>
+      <button id="btn2" onclick="check()">Give me the cut vertices</button>
+      <br>
+      <span id="result">
+
+      </span>
+      <script src="cspc.js"></script>
+  </body>
+</html>
